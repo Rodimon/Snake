@@ -128,7 +128,7 @@ function loop() {
             l.innerHTML = snake.maxCells - 4
             wall.y = getRandomInt(1, 24) * grid;
             o += 3
-            setTimeout(ol, 3000)
+            setTimeout(ol, 1000)
         }
         if (cell.x === wall.x && cell.y === wall.y && o !== 3) {
             Lose()
