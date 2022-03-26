@@ -1,6 +1,5 @@
 let canvas = document.getElementById("game");
 let l = document.getElementById('points')
-let wallo
 let context = canvas.getContext('2d');
 let grid = 16;
 let count = 0;
@@ -24,33 +23,7 @@ let wall = {
     walls: [],
     maxWalls: 9
 };
-if (window.screen.width < 800) {
-    snake.x = 80
-    snake.y = 80
-    apple.x = 160
-    apple.y = 160
-    wall.x = 80
-    wall.y = 160
-    grid = 8
-    game.width = 200;
-    game.height = 200;
-    function Lose() {
-        snake.x = 80;
-        snake.y = 80;
-        snake.cells = [];
-        l.innerHTML = 0
-        snake.maxCells = 4;
-        snake.dx = grid;
-        snake.dy = 0;
-        apple.x = getRandomInt(1, 24) * grid;
-        apple.y = getRandomInt(1, 24) * grid;
-        wall.y = getRandomInt(1, 24) * grid;
-    };
-    if (wall.dx == 1 || wall.dy == 1) {
-        wall.dx = wall.dx / 2;
-        wall.dy = wall.dy / 2;
-    };
-}
+
 
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
