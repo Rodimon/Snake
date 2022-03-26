@@ -35,8 +35,8 @@ if (window.screen.width < 800) {
     game.width = 200;
     game.height = 200;
     function Lose() {
-        snake.x = 80;
-        snake.y = 80;
+        snake.x = 40;
+        snake.y = 40;
         snake.cells = [];
         l.innerHTML = 0
         snake.maxCells = 4;
