@@ -25,9 +25,11 @@ html,
         @media screen and (max-width: 540px) {
             span {
                 font-size: 45px;
+                    position:fixed;
             }
 
             canvas {
+                position: fixed;
                 border: 1px solid white;
             }
         }
