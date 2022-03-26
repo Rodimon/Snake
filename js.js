@@ -35,8 +35,8 @@ if (window.screen.width < 800) {
     game.width = 200;
     game.height = 200;
     function Lose() {
-        snake.x = 40;
-        snake.y = 40;
+        snake.x = 80;
+        snake.y = 80;
         snake.cells = [];
         l.innerHTML = 0
         snake.maxCells = 4;
@@ -51,11 +51,8 @@ if (window.screen.width < 800) {
         wall.dy = wall.dy / 2;
     };
 }
-
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
-}
-function Lose() {
+else {
+    function Lose() {
     snake.x = 160;
     snake.y = 160;
     snake.cells = [];
@@ -65,7 +62,12 @@ function Lose() {
     snake.dy = 0;
     apple.x = getRandomInt(1, 24) * grid;
     apple.y = getRandomInt(1, 24) * grid;
-    wallo = getRandomInt(1, 24) * grid;
+    wall.y = getRandomInt(1, 24) * grid;
+}
+};
+
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
 }
 function ol() {
     o = 0
