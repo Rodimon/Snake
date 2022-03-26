@@ -24,7 +24,7 @@ let wall = {
     walls: [],
     maxWalls: 9
 };
-if (window.screen.width <= 540) {
+if (window.screen.width < 800) {
     snake.x = 80
     snake.y = 80
     apple.x = 160
