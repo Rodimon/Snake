@@ -26,7 +26,6 @@ html,
         @media screen and (max-width: 540px) {
             span {
                 font-size: 45px;
-                position: fixed;
             }
 
             canvas {
