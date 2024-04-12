@@ -139,10 +139,10 @@ function loop() {
             }
         }
         if (snake.x < 0) {
-            snake.x = canvas.width
+            snake.x = (canvas.width - 1)
         }
         if (snake.y < 0) {
-            snake.y = canvas.height
+            snake.y = (canvas.height - 1)
         }
         if (snake.x >= canvas.width) {
             snake.x = 0
