@@ -32,8 +32,8 @@ if (window.screen.width < 800) {
     wall.x = 80
     wall.y = 160
     grid = 8
-    game.width = 400;
-    game.height = 400;
+    game.width = 800;
+    game.height = 800;
     function Lose() {
         snake.x = 80;
         snake.y = 80;
