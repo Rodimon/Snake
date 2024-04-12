@@ -139,15 +139,15 @@ function loop() {
             }
         }
         if (snake.x < 0) {
-            snake.x = (canvas.width - 1)
+            snake.x = canvas.width
         }
         if (snake.y < 0) {
-            snake.y = (canvas.height - 1)
+            snake.y = canvas.height
         }
-        if (snake.x >= canvas.width) {
+        if (snake.x >= canvas.width + 1) {
             snake.x = 0
         }
-        if (snake.y >= canvas.height) {
+        if (snake.y >= canvas.height + 1) {
             snake.y = 0
         }
     });
